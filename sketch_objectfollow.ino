@@ -119,10 +119,8 @@ void loop() {
     }
 
     if (DF <= 10) {   // If the object is less than or equal to 10cm away...
-        Stop();   // Robot stops
+        Backward();   // Robot goes
     } else if (10 < DF && DF <= 20) {   // If the object is between 10 and 20cm...
         Forward();    // Robot moves forward
     }
 }
-
-
